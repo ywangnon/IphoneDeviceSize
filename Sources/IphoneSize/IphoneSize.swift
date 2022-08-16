@@ -133,11 +133,11 @@ public struct IphoneSize {
         self.iphone.append(device)
     }
     
-    func allDevice() {
+    public func allDevice() {
         iphone.forEach {print($0.Device)}
     }
     
-    func lcdsizeOfDevice(_ device: String) {
+    public func lcdsizeOfDevice(_ device: String) {
         iphone.forEach { deviceSize in
             if deviceSize.Device == device {
                 print(deviceSize.LCDSize)
@@ -145,7 +145,7 @@ public struct IphoneSize {
         }
     }
     
-    func devicesOfsize(_ size: Float) {
+    public func devicesOfsize(_ size: Float) {
         iphone.forEach { deviceSize in
             if deviceSize.LCDSize == size {
                 print(deviceSize.Device)
